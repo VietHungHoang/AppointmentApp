@@ -1,5 +1,7 @@
 package com.vhh.appointmentapp.Repository;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -34,7 +36,7 @@ public class MainRepository {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Log.e("FirebaseError", "Lỗi Firebase: " + error.getMessage());
             }
         });
                 return listData;

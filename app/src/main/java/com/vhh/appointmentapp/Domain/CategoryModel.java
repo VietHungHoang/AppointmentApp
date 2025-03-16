@@ -1,37 +1,40 @@
 package com.vhh.appointmentapp.Domain;
 
 public class CategoryModel {
-    private int id;
-    private String name;
-    private String picture;
+    private int Id;
+    private String Name;
+    private String Picture;
+
+    public CategoryModel() {
+    }
 
     public CategoryModel(int id, String name, String picture) {
-        this.id = id;
-        this.name = name;
-        this.picture = picture;
+        Id = id;
+        Name = name;
+        Picture = picture;
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
 
     public void setId(int id) {
-        this.id = id;
+        Id = id;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public String getPicture() {
-        return picture;
+        return Picture;
     }
 
     public void setPicture(String picture) {
-        this.picture = picture;
+        Picture = picture;
     }
 }

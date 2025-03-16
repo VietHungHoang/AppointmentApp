@@ -1,15 +1,11 @@
-package com.vhh.appointmentapp;
+package com.vhh.appointmentapp.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.vhh.appointmentapp.databinding.ActivityMainBinding;
 import com.vhh.appointmentapp.databinding.ActivitySplashBinding;
 
 public class SplashActivity extends AppCompatActivity {

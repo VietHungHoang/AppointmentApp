@@ -7,12 +7,12 @@ import com.vhh.appointmentapp.Domain.CategoryModel;
 import com.vhh.appointmentapp.Repository.MainRepository;
 
 import java.util.List;
-
+// sdffdsfdsgg
 public class MainViewModel extends ViewModel {
     private final MainRepository repository;
 
-    public MainViewModel(MainRepository repository) {
-        this.repository = repository;
+    public MainViewModel() {
+        this.repository = new MainRepository();
     }
 
     public LiveData<List<CategoryModel>> localCategory() {
