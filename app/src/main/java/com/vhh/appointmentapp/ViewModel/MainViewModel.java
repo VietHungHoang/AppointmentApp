@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.vhh.appointmentapp.Domain.CategoryModel;
+import com.vhh.appointmentapp.Domain.DoctorsModel;
 import com.vhh.appointmentapp.Repository.MainRepository;
 
 import java.util.List;
@@ -17,5 +18,8 @@ public class MainViewModel extends ViewModel {
 
     public LiveData<List<CategoryModel>> localCategory() {
         return repository.localCategory();
+    }
+    public LiveData<List<DoctorsModel>> localDoctors() {
+        return repository.loadDoctor();
     }
 }
